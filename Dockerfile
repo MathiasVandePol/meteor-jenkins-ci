@@ -1,6 +1,10 @@
 #Create a jenkins image with android from one with nodejs npm and meteor available
 FROM ocasta/android-jenkins:latest
-MAINTAINER Jack Kavanagh (http://jackkav.github.io)
+MAINTAINER Mathias Van de Pol
+
+#install and update
+RUN apt-get update && apt-get install -y \
+  make 
 
 #install meteor
 RUN curl https://install.meteor.com/ | sh && export PATH=$PATH:$HOME/.meteor
