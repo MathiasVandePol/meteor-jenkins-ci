@@ -1,5 +1,5 @@
 #Create a jenkins image with android from one with nodejs npm and meteor available
-FROM codetroopers/jenkins-slave-jdk8-android
+FROM codetroopers/jenkins-slave-jdk8-android:23-23.0.2
 MAINTAINER Mathias Van de Pol
 
 #install and update
